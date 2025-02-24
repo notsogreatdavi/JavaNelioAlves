@@ -11,7 +11,7 @@ public class Exercicio02 {
 
         A = 3.14159 * (R * R);
 
-        System.out.printf("A = %.4f", area);
+        System.out.printf("A = %.4f", A);
         sc.close();
     }
 }
