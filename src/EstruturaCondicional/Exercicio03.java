@@ -19,5 +19,6 @@ public class Exercicio03 {
             System.out.println("Nao sao Multiplos");
 
         }
+        sc.close();
     }
 }
