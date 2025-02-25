@@ -10,22 +10,31 @@ public class Exercicio05 {
 
         code = sc.nextInt();
         quant = sc.nextInt();
-        double totalPrice;
 
-        if (code == 1) {
+        double totalPrice = 0;
+        switch (code) {
+        case 1:
             totalPrice = quant * 4.00;
-        }
-        else if (code == 2){
+            break;
+
+        case 2:
             totalPrice = quant * 4.50;
-        }
-        else if (code == 3){
+            break;
+
+        case 3:
             totalPrice = quant * 5.00;
-        }
-        else if (code == 4){
+            break;
+
+        case 4:
             totalPrice = quant * 2.00;
-        }
-        else {
+            break;
+
+        case 5:
             totalPrice = quant * 1.50;
+            break;
+        default:
+            System.out.print("CODIGO INVALIDO");
+            break;
         }
 
         System.out.printf("Total: R$ %.2f", totalPrice);
